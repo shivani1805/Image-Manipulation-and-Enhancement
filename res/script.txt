@@ -1,0 +1,132 @@
+#load pdpMainImage.jpg and call it 'pdpMainImage'
+load pdpMainImage.jpg pdpMainImage
+
+#vertically flip pdpMainImage.jpg and call it 'pdp-vertical-flip'
+vertical-flip pdpMainImage pdp-vertical-flip
+#save 'pdp-vertical-flip'
+save scriptOut/pdp-vertical-flip.jpg pdp-vertical-flip
+
+#horizontally flip pdpMainImage.jpg and call it 'pdp-horizontal-flip'
+horizontal-flip pdpMainImage pdp-horizontal-flip
+#save 'pdp-horizontal-flip'
+save scriptOut/pdp-horizontal-flip.jpg pdp-horizontal-flip
+
+#brighten pdpMainImage.jpg and call it 'pdp-brighten'
+brighten 50 pdpMainImage pdp-brighten
+#save 'pdp-brighten'
+save scriptOut/pdp-brighten.jpg pdp-brighten
+
+#split pdpMainImage.jpg into red , green and blue components'
+rgb-split pdpMainImage red green blue
+#save 'pdp-red'
+save scriptOut/pdp-red.jpg red
+#save 'pdp-green'
+save scriptOut/pdp-green.jpg green
+#save 'pdp-blue'
+save scriptOut/pdp-blue.jpg blue
+
+#combine red, green and blue components'
+rgb-combine pdp-combine red green blue
+#save combine image 'pdp-blue'
+save scriptOut/pdp-combine.jpg pdp-combine
+
+#blur pdpMainImage.jpg and call it 'pdp-blur'
+blur pdpMainImage pdp-blur
+#save 'pdp-blur'
+save scriptOut/pdp-blur.jpg pdp-blur
+
+#Split View for blur pdpMainImage.jpg and call it 'pdp-split-blur'
+blur pdpMainImage pdp-split-blur split 50
+#save 'pdp-split-blur'
+save scriptOut/pdp-split-blur.jpg pdp-split-blur
+
+#sharpen pdpMainImage.jpg and call it 'pdp-sharpen'
+sharpen pdpMainImage pdp-sharpen
+#save 'pdp-sharpen'
+save scriptOut/pdp-sharpen.jpg pdp-sharpen
+
+#Split View sharpen pdpMainImage.jpg and call it 'pdp-split-sharpen'
+sharpen pdpMainImage pdp-split-sharpen split 50
+#save 'pdp-split-sharpen'
+save scriptOut/pdp-split-sharpen.jpg pdp-split-sharpen
+
+#sepia pdpMainImage.jpg and call it 'pdp-sepia'
+sepia pdpMainImage pdp-sepia
+#save 'pdp-sepia'
+save scriptOut/pdp-sepia.jpg pdp-sepia
+
+#Split View sepia pdpMainImage.jpg and call it 'pdp-split-sepia'
+sepia pdpMainImage pdp-split-sepia split 50
+#save 'pdp-split-sepia'
+save scriptOut/pdp-split-sepia.jpg pdp-split-sepia
+
+#value component pdpMainImage.jpg and call it 'pdp-value-component'
+value-component pdpMainImage pdp-value-component
+#save 'pdp-value-component'
+save scriptOut/pdp-value-component.jpg pdp-value-component
+
+#intensity component pdpMainImage.jpg and call it 'pdp-intensity-component'
+intensity-component pdpMainImage pdp-intensity-component
+#save 'pdp-intensity-component'
+save scriptOut/pdp-intensity-component.jpg pdp-intensity-component
+
+
+#apply luma on pdpMainImage.jpg and call it 'pdp-luma'
+luma pdpMainImage pdp-luma
+#save 'pdp-luma'
+save scriptOut/pdp-luma.jpg pdp-luma
+
+#apply Split View luma on pdpMainImage.jpg and call it 'pdp-split-luma'
+luma pdpMainImage pdp-split-luma split 30
+#save 'pdp-split-luma'
+save scriptOut/pdp-split-luma.jpg pdp-split-luma
+
+
+#red component of pdpMainImage.jpg and call it 'pdp-red-component'
+red-component pdpMainImage pdp-red-component
+#save 'pdp-red-component'
+save scriptOut/pdp-red-component.jpg pdp-red-component
+
+
+#green component of pdpMainImage.jpg and call it 'pdp-green-component'
+green-component pdpMainImage pdp-green-component
+#save 'pdp-green-component'
+save scriptOut/pdp-green-component.jpg pdp-green-component
+
+#blue component of pdpMainImage.jpg and call it 'pdp-blue-component'
+blue-component pdpMainImage pdp-blue-component
+#save 'pdp-blue-component'
+save scriptOut/pdp-blue-component.jpg pdp-blue-component
+
+#color correct pdpMainImage.jpg and call it 'pdp-color-correct'
+color-correct pdpMainImage pdp-color-correct
+#save 'pdp-color-correct'
+save scriptOut/pdp-color-correct.jpg pdp-color-correct
+
+#Split View color correct pdpMainImage.jpg and call it 'pdp-split-color-correct'
+color-correct pdpMainImage pdp-split-color-correct split 70
+#save 'pdp-split-color-correct'
+save scriptOut/pdp-split-color-correct.jpg pdp-split-color-correct
+
+
+#create histogram of pdpMainImage.jpg and call it 'pdp-histogram'
+histogram pdpMainImage pdp-histogram
+#save 'pdp-histogram'
+save scriptOut/pdp-histogram.jpg pdp-histogram
+
+#adjust levels of pdpMainImage.jpg and call it 'pdp-levels-adjust'
+levels-adjust 10 25 50 pdpMainImage pdp-levels-adjust
+#save 'pdp-levels-adjust'
+save scriptOut/pdp-levels-adjust.jpg pdp-levels-adjust
+
+#Split View adjust levels of pdpMainImage.jpg and call it 'pdp-split-levels-adjust'
+levels-adjust 10 25 50 pdpMainImage pdp-split-levels-adjust split 40
+#save 'pdp-split-levels-adjust'
+save scriptOut/pdp-split-levels-adjust.jpg pdp-split-levels-adjust
+
+#Compress pdpMainImage.jpg and call it 'pdp-compress'
+compress 50 pdpMainImage pdp-compress
+#save 'pdp-compress'
+save scriptOut/pdp-compress.jpg pdp-compress
+
+
